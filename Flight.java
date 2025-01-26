@@ -1,5 +1,3 @@
-import static org.junit.Assert.*;
-import org.junit.Test;
 
 public class Flight {
 	int flightNumber, capacity, numberOfSeatsLeft;
@@ -32,7 +30,7 @@ public class Flight {
 
 	@Override
 	public String toString() {
-		return String.format("Flight %d, %s to %s, %s, original price: %d$",
+		return String.format("Flight %d, %s to %s, %s, original price: %.0f$",
 				flightNumber, origin, destination, departureTime, originalPrice);
 	}
 
